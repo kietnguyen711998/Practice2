@@ -3,43 +3,18 @@ package bai5;
 import java.util.Scanner;
 
 public class bai5 {
-	public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-          
-        System.out.println("Enter the number of rows: ");
-          
-        int rows = sc.nextInt();
-          
-        for (int i = 1; i <= rows; i++) 
-        {
-            int num;
-              
-            if(i%2 == 0)
-            {
-                num = 0;
-                  
-                for (int j = 1; j <= rows; j++)
-                {
-                    System.out.print(num);
-                      
-//                    num = (num == 0)? 1 : 0;
-                }
+	public static void printStars(int n) {
+
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; ++j) {
+                System.out.print("* ");
             }
-            else
-            {
-                num = 1;
-                  
-                for (int j = 1; j <= rows; j++)
-                {
-                    System.out.print(num);
-                      
-//                    num = (num == 0)? 1 : 0;
-                }
-            }
-              
-            System.out.println();
+            System.out.println("");
         }
-          
-        sc.close();
     }
+	public static void main(String args[]) 
+    { 
+        int n = 5; 
+        printStars(n); 
+    } 
 }

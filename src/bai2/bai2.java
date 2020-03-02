@@ -25,7 +25,7 @@ public class bai2 {
 			}  
 			else if ( month == 2 )
 			{
-				System.out.println("\n Either 28 or 29 Days in this Month");  	
+				System.out.println("\n Either 29 Days in this Month");  	
 			} 
 			else
 				System.out.println("\n Please enter Valid Number between 1 to 12");
